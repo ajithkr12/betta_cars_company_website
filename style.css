@@ -108,7 +108,7 @@ header.scrolled #navbar:hover {
   color: white;
   }
   header.scrolled nav a {
-  color: rgb(189, 61, 61);
+  color: #000000;
   }
   .navbar-form {
   width: 90%;
