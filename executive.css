@@ -1,0 +1,126 @@
+.executive-container{
+  padding: 40px 10%;
+  margin: 0px;
+}
+
+.left-side {
+  background: url('images/railway.jpg') no-repeat center center;
+
+  background-size: cover;
+  height: 60vh; 
+
+}
+
+
+.left-side::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensures overlay is above the background image */
+}
+
+
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: auto; /* Full viewport height */
+  padding: 20px 20px 20px 30px;
+  /* background-color: black; */
+}
+
+
+
+.right-side .header-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+align-items: start;
+margin-bottom: 24px;
+  }
+
+
+
+  .right-side .header-title h1 {
+    font-weight: 800;
+    font-size: 44px;
+    margin: 6px 0px 10px 0px;
+    
+  }
+  
+  .right-side .header-title span{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    color: #471aa0;
+  }
+  .right-side .header-title p{
+    /* max-width: min(60ch, 100% - 2rem); */
+    line-height: 1.6;
+    color: #565656;
+    font-size: 16px;
+    text-align: start;
+  }
+
+
+  .right-side .call-button {
+    margin: 0%;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f51111;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.right-side .call-button:hover {
+    background-color: #f51111;
+}
+
+
+
+@media (max-width: 992px) {
+
+.executive-row{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+  .right-side {
+
+    padding: 20px 0px;
+  }
+}
+
+@media (max-width: 820px) {
+
+  .executive-container{
+    padding: 18px 6%;
+    margin: 0px;
+  }
+
+
+  .right-side .header-title h1 {
+    font-size: 38px;
+
+    
+  }
+  .right-side .call-button {
+    width: 100%;
+}
+
+
+
+}

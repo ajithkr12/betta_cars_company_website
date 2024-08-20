@@ -63,7 +63,7 @@ header.scrolled {
 }
 
 header .logo img {
-  width: 173px;
+  width: 178px;
 }
 
 nav {
@@ -80,10 +80,20 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover{
+  color: #F51111;
+}
+nav .active{
+  color: #F51111;
+}
+
+
 header.scrolled nav a {
   color: rgb(0, 0, 0);
 }
-
+header.scrolled nav .active {
+  color: #F51111;
+}
 #navbar {
   color: white;
   font-size: 2rem;

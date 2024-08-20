@@ -193,4 +193,9 @@
    width: 100%;
    margin-left: 0;
  }
+ .contact-container .content .right-side form{
+
+  width: 100%; 
+
+}
 }
