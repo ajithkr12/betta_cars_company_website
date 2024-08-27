@@ -157,13 +157,3 @@
     padding: 0px;
 }
 
-.feature-section{
-  padding: 2% 8%;
-}
-.feature-aligned{
-  display: flex;
-  flex-direction: row;
-gap: 10px;
-  justify-content: center;
-
-}
