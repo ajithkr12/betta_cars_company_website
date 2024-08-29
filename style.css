@@ -578,6 +578,49 @@ cursor: pointer;
 
 }
 
+@media only screen and (max-width: 500px) {
+  .home-content{
+    padding: 0 6rem ;
+    }
+    .home-content h3{
+    font-size: 35px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-bottom: 1.5rem;
+    }
+    .home-content h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    font-weight: bold;
+    margin-top: 15px;
+    word-spacing: 2px;
+    font-weight: 100;
+
+    }
+    .home-content h1 span{
+    
+    color: rgb(255, 255, 255);
+    padding: 0 1rem;
+    
+    display: inline-block;
+    
+    }
+    .important-btn{
+
+      text-align: center;
+      padding: 1.4rem 3.6rem;
+      background-color: #f51111;
+      font-size: 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 1rem;
+      margin-top: 40px;
+      }
+}
+
 /* ####################### END SUBSCRIBE STYLE #########################*/
 
 /* service section  */
