@@ -6,8 +6,6 @@
   padding: 0;
 }
 
-
-
 a,
 button {
   color: #4fc08d;
@@ -15,7 +13,7 @@ button {
 
 main {
   /* width: min(980px, 90%); */
-  padding: 48px 10%;
+  padding: 48px 10% 96px 10%;
   margin: 0 auto;
   /* min-height: 100vh;
   display: flex;
@@ -32,7 +30,6 @@ main {
   font-weight: 800;
   font-size: 44px;
   margin: 6px 0px 10px 0px;
-  
 }
 
 .header span {
@@ -53,7 +50,7 @@ main {
 
 .item {
   width: 100%;
-  height: 400px;
+  height: 280px;
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -76,12 +73,7 @@ main {
   padding: 28px 25px;
   color: #fff;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    0deg,
-    #020024 0%,
-    #000032a1 3%,
-    #17d9ff00 100%
-  );
+  background: linear-gradient(0deg, #020024 0%, #000032a1 3%, #17d9ff00 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -102,12 +94,9 @@ main {
   margin-bottom: 5px;
 }
 
-.owl-theme .owl-dots{
+.owl-theme .owl-dots {
   margin: 4px 0px;
 }
-
-
-
 
 .owl-nav {
   position: absolute;
@@ -115,7 +104,9 @@ main {
   right: 0;
 }
 
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
   border-radius: 50%;
 }
 .owl-nav button {
@@ -140,74 +131,67 @@ main {
   }
 }
 
-
-
-
-
-
 .fleet-service-card {
   background-color: #ffffff;
   border-radius: 10px;
   margin-top: 12px;
   margin-bottom: 12px;
   padding: 8px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   /* width: 320px;  */
   overflow: hidden;
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  }
-  
-  .fleet-service-image {
+}
+
+.fleet-service-image {
   height: 220px; /* Increased height of the image */
   overflow: hidden;
-  }
-  
-  .fleet-service-image img {
+}
+
+.fleet-service-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  }
-  
-  .fleet-service-content {
+}
+
+.fleet-service-content {
   padding: 10px 20px 20px 20px;
   flex-grow: 1;
-  }
-  
-  .fleet-service-card h3 {
+}
+
+.fleet-service-card h3 {
   font-size: 22px;
   margin-bottom: 10px;
-  }
-  
-  .fleet-service-card p {
+}
+
+.fleet-service-card p {
   color: #6c757d;
   font-size: 16px;
   margin: 0;
-  }
+}
 
-  
-  .fleet-service-image img:hover {
+.fleet-service-image img:hover {
   transform: scale(1.05);
-  }
+}
 
-  .fleet-service-card {
+.fleet-service-card {
   position: relative;
-  }
+}
 
-.fleet-service-points{
+.fleet-service-points {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.taxi-details{
+.taxi-details {
   display: flex;
   justify-content: start;
   align-items: center;
   align-content: center;
   padding: 0px 20px 8px 20px;
-
 }
 
 .taxi-details .icon-circle {
@@ -222,41 +206,32 @@ main {
   color: #333; /* Icon color */
   font-size: 24px;
   margin-right: 6px;
-
-  }
-
-.taxi-details .icon-circle i{
-font-size: 14px;
 }
-.taxi-details p{
+
+.taxi-details .icon-circle i {
   font-size: 14px;
-
-  }
-
-
+}
+.taxi-details p {
+  font-size: 14px;
+}
 
 /* ####################FOOTER  STYLE ########################*/
 
-
-
-
-
-
 .contact-area {
-  border-bottom: 1px solid #353C46;
+  border-bottom: 1px solid #353c46;
 }
 .contact-area img {
   max-width: 100%;
   height: auto;
 }
-      section {
-          padding: 60px 0;
-      }
+section {
+  padding: 60px 0;
+}
 .contact-area ul {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-      }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .contact-content p {
   font-size: 15px;
   margin: 30px 0 60px;
@@ -264,7 +239,7 @@ font-size: 14px;
 }
 
 .contact-content p::after {
-  background: #353C46;
+  background: #353c46;
   bottom: -30px;
   content: "";
   height: 1px;
@@ -307,8 +282,8 @@ font-size: 14px;
 }
 
 .contact-social ul li a:hover {
-  border: 1px solid #E5292A;
-  color: #E5292A;
+  border: 1px solid #e5292a;
+  color: #e5292a;
 }
 
 .contact-content img {
@@ -316,7 +291,7 @@ font-size: 14px;
 }
 
 .contact-area footer {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #868c96;
 }
 
@@ -327,11 +302,7 @@ footer p {
 
 footer img {
   width: 44px;
-} 
-
-
-
-
+}
 
 .progress-wrap {
   position: fixed;
@@ -359,13 +330,13 @@ footer img {
 
 .progress-wrap::after {
   position: absolute;
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: '\f062';
+  content: "\f062";
   text-align: center;
   line-height: 46px;
   font-size: 18px;
-  color: #E5292A;
+  color: #e5292a;
   left: 0;
   top: 0;
   height: 46px;
@@ -387,14 +358,14 @@ footer img {
 
 .progress-wrap::before {
   position: absolute;
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: '\f062';
+  content: "\f062";
   text-align: center;
   line-height: 46px;
   font-size: 18px;
   opacity: 0;
-  background-image: linear-gradient(298deg, #E5292A, #E5292A);
+  background-image: linear-gradient(298deg, #e5292a, #e5292a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   left: 0;
@@ -417,7 +388,7 @@ footer img {
 }
 
 .progress-wrap svg.progress-circle path {
-  stroke: #E5292A;
+  stroke: #e5292a;
   stroke-width: 6;
   box-sizing: border-box;
   -webkit-transition: all 200ms linear;

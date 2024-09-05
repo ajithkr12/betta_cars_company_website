@@ -142,14 +142,13 @@
               <i class="fas fa-envelope"></i>
             </div>
             <div class="text-box">
-              <p class="text-sub"><span>Email : </span>Info@Bettacars.Co.Uk </p>
+              <p class="text-sub"><span>Email : </span>Info@Bettacars.Co.Uk</p>
             </div>
           </div>
 
           <div class="email details">
             <div class="icon-box">
               <i class="fas fa-globe"></i>
-
             </div>
             <div class="text-box">
               <p class="text-sub"><span>Website : </span>www.Bettacars.Co.Uk</p>
@@ -162,23 +161,43 @@
         <div class="col-sm-6 right-side">
           <div class="topic-text">Send us a message</div>
 
-          <form action="#">
+          <form action="#" id="myForm">
             <div class="input-box">
-              <input type="text" placeholder="Enter your name" />
+              <input
+                type="text"
+                placeholder="Enter your name"
+                id="name"
+                required
+              />
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Enter your email" />
+              <input
+                type="email"
+                placeholder="Enter your email"
+                id="email"
+                required
+              />
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Enter Subject" />
+              <input
+                type="text"
+                placeholder="Enter Subject"
+                id="subject"
+                required
+              />
             </div>
 
             <div class="input-box message-box">
-              <textarea type="text" placeholder="Enter your Message"></textarea>
+              <textarea
+                type="text"
+                placeholder="Enter your Message"
+                id="message"
+                required
+              ></textarea>
             </div>
 
             <div class="button">
-              <input type="button" value="Send Now" />
+              <input type="submit" value="send message" />
             </div>
           </form>
         </div>
@@ -226,9 +245,9 @@
               <a href="#"><img src="images/logo2.JPG" alt="logo" /></a>
               <p>Feeling Appy?Download Our App And Book,Track And GO!</p>
               <div class="hr"></div>
-              <h6>ADDRESS : 5A MARKET PLACE
-                WHITTLESEY,CAMBRIDGESHIRE,
-                PE7 1AB</h6>
+              <h6>
+                ADDRESS : 5A MARKET PLACE WHITTLESEY,CAMBRIDGESHIRE, PE7 1AB
+              </h6>
               <h6>
                 info@bettacars.co.uk <span>|</span> www.bettacars.co.uk
                 <span>|</span>Call 📞 01733 247 365
@@ -296,6 +315,25 @@
       </svg>
     </div>
 
+    <div id="popupModal" style="display: none">
+      <div class="modal-content">
+        <p id="popupMessage">Message is Sending...</p>
+        <!-- <button id="closePopup">Close</button> -->
+      </div>
+    </div>
+
+    <div id="popupModalSucces" style="display: none">
+      <div class="custom-modal">
+        <div class="succes succes-animation icon-top">
+          <i class="fa fa-check"></i>
+        </div>
+        <div class="succes border-bottom"></div>
+        <div class="content">
+          <p class="message-type">Message sent successfully</p>
+        </div>
+      </div>
+    </div>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Owl Carousel JS -->
@@ -306,6 +344,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Linking custom script -->
     <script src="script.js"></script>
+    <script src="contact.js"></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {

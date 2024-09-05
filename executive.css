@@ -1,148 +1,128 @@
-
-
-
-
-.executive-area{
-  padding:4% 8% 2% 8%;
+.executive-area {
+  padding: 4% 8% 2% 8%;
 }
 
+.executive-area .text-content {
+  height: auto;
+  display: flex;
+  flex-direction: column;
 
-.executive-area .text-content{
-    height: auto;
-   display: flex;
-   flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0px 24px;
+}
 
-   justify-content: center;
-   align-items: start;
-   padding: 0px 24px;
-  }
+.executive-area.image-content {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background-color: #e5292a;
+}
 
+.executive-area .image-content img {
+  width: 100%;
+}
 
-  .executive-area.image-content{
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-    background-color: #E5292A;
+.executive-area .text-content h1 {
+  font-size: 32px;
+  padding: 12px 0px;
+  font-weight: 600;
+  margin: 0;
+}
+.executive-area .text-content h4 {
+  font-size: 28px;
+  padding: 12px 0px;
+  font-weight: 300;
+  margin: 0%;
+}
 
-  }
+.executive-area .text-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
-  .executive-area .image-content img{
-      width: 100%;
-  }
-
-  .executive-area .text-content h1{
-    font-size: 32px;
-    padding: 12px 0px;
-    font-weight: 600;
-    margin: 0;
-  }
-  .executive-area .text-content h4{
-    font-size: 28px;
-    padding: 12px 0px;
-    font-weight: 300;
-    margin: 0%;
-  }
-  
-  .executive-area .text-content p{
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-
-
-  .executive-area .text-content .call-button {
-    margin: 0%;
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #f51111;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    margin-top: 12px;
+.executive-area .text-content .call-button {
+  margin: 0%;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #f51111;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin-top: 12px;
 }
 .executive-area .text-content .call-button:hover {
-    background-color: #f51111;
+  background-color: #f51111;
 }
-
-
 
 @media (max-width: 992px) {
-
-  .executive-area .image-content{
-
+  .executive-area .image-content {
     padding: 0px;
-
-
   }
 
-  .executive-area .text-content{
-   padding: 24px 0px;
+  .executive-area .text-content {
+    padding: 24px 0px;
   }
-
 }
 
+@media (max-width: 767px) {
+  .executive-area .text-content {
+    padding: 24px 0px;
+  }
 
-  @media (max-width: 767px) {
-    .executive-area .text-content{
-
-     padding: 24px 0px;
-    }
-
-  .executive-area .text-content h1{
+  .executive-area .text-content h1 {
     font-size: 32px;
     padding: 10px 0px;
     font-weight: 600;
     margin: 0;
   }
-  .executive-area .text-content h4{
+  .executive-area .text-content h4 {
     font-size: 18px;
     padding: 10px 0px;
     font-weight: 300;
     margin: 0%;
   }
-  
-  .executive-area .text-content p{
+
+  .executive-area .text-content p {
     font-size: 14px;
   }
 
   .executive-area .text-content .call-button {
     width: 100%;
+  }
 }
 
+.executive-sub .executive-sub-item {
+  margin-bottom: 14px;
+}
 
-  
-  }
-
-  .executive-sub .executive-sub-item{
-    margin-bottom: 14px;
-  }
-
-  .executive-sub .sub-heading{
-    font-size: 22px;
-    color: #000000;
-    font-weight: 600;
-    margin: 0px 0px 14px 0px;
-    padding: 0px;
-  }
+.executive-sub .sub-heading {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0px 0px 14px 0px;
+  padding: 0px;
+}
 .executive-sub .heading-with-icon {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 4px;
 }
 .executive-sub .heading-with-icon i {
-    margin-right: 16px;
-    color: #E5292A;
-    font-size: 16px;
+  margin-right: 16px;
+  color: #e5292a;
+  font-size: 16px;
 }
 
-.executive-sub .heading-with-icon .point-heading{
+.executive-sub .heading-with-icon .point-heading {
   font-size: 17px;
   color: #000000;
   font-weight: 600;
@@ -150,11 +130,42 @@
   padding: 0px;
 }
 
-
-.executive-sub .description{
-    font-size: 15px;
-    color: #555;
-    margin: 0px 0px 0px 32px; /* Align description with the start of the text in the heading */
-    padding: 0px;
+.executive-sub .description {
+  font-size: 15px;
+  color: #555;
+  margin: 0px 0px 0px 32px; /* Align description with the start of the text in the heading */
+  padding: 0px;
 }
 
+/* airport location  */
+.city-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.city-item {
+  flex: 1 1 30%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.city-item i {
+  color: #d9534f;
+  margin-right: 10px;
+}
+@media (max-width: 650px) {
+  /* .city-grid {
+    flex-direction: column;
+  } */
+
+  .city-item {
+    flex: 1 1 46%;
+    /* width: 50%; */
+  }
+}
