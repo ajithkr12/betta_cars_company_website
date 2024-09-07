@@ -422,3 +422,142 @@ footer img {
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
+
+
+
+
+
+/* Popup Form Styling */
+
+/* Container for both buttons */
+.button-container {
+  display: flex;
+  justify-content: start;
+  gap: 20px; /* Add space between the buttons */
+}
+
+/* Book Your Ride Button */
+.btn-book-ride-container .btn-book-ride {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Apply for Business Account Button */
+.btn-apply-business-container .btn-apply-business {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f51111;
+  color: white;
+  font-size: 16px;
+  
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Popup Form Styling */
+#businessAccountPopup {
+  max-width: 500px;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#businessAccountPopup h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#businessAccountPopup label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#businessAccountPopup input[type="text"],
+#businessAccountPopup input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.popup-btn button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.popup-btn button:hover {
+  background-color: #0056b3;
+}
+
+#closePopupBtn {
+  background-color: #bbb;
+  margin-left: 10px;
+}
+
+#closePopupBtn:hover {
+  background-color: #888;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+  }
+
+  .btn-book-ride, .btn-apply-business {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home-content h1 {
+    font-size: 20px;
+  }
+
+  .btn-book-ride, .btn-apply-business {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  #businessAccountPopup h2 {
+    font-size: 18px;
+  }
+
+  #businessAccountPopup input[type="text"],
+  #businessAccountPopup input[type="email"] {
+    font-size: 12px;
+  }
+
+  .popup-btn button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+

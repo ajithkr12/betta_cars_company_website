@@ -74,6 +74,7 @@
         <a href="railway_transfers.html">Railway station</a>
         <a href="executive.html">Executive Hire</a>
         <a href="#main-fleet">Our fleet</a>
+        <a href="partnersites.html">Partner Sites</a>
         <a href="contact.html">Contact Us</a>
       </nav>
 
@@ -121,23 +122,71 @@
       </div>
     </div>
 
-    <!-- Home section starting -->
-    <div class="main-home">
-      <div class="home-inner-contect">
-        <div class="home-content">
-          <h3>Feeling Appy?</h3>
+<!-- Home section starting -->
+                      <div class="main-home">
+                        <div class="home-inner-contect">
+                          <div class="home-content">
+                            <h3>Feeling Appy?</h3>
 
-          <h1>
-            Download our App <span> and Book,</span> <br />
-            Track and GO!
-          </h1>
+                            <h1>
+                              Download our App <span> and Book,</span> <br />
+                              Track and GO!
+                            </h1>
 
-          <div class="important-btn">
-            <a href="https://web.dmbook.co/1530/Login" target="_blank"">Book Your Ride</a>
-          </div>
-        </div>
-      </div>
-    </div>
+                            <div class="button-container">
+                              <!-- Book Your Ride Button (already sorted) -->
+                              <div class="btn-book-ride-container">
+                                <a href="https://web.dmbook.co/1530/Login" target="_blank" class="btn-book-ride">Book Your Ride</a>
+                              </div>
+
+                              <!-- Apply for Business Account Button -->
+                              <div class="btn-apply-business-container">
+                                <a href="#" class="btn-apply-business" onclick="openBusinessPopup()">Apply for Business Account</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Popup form for Business Account -->
+                      <div id="businessAccountPopup">
+                        <h2>Apply for Business Account</h2>
+                        <label for="companyName">Company Name</label>
+                        <input type="text" id="companyName" name="companyName" required>
+
+                        <label for="companyAddress">Company Address</label>
+                        <input type="text" id="companyAddress" name="companyAddress" required>
+
+                        <label for="customerName">Customer Name</label>
+                        <input type="text" id="customerName" name="customerName" required>
+
+                        <label for="companyLocation">Company Location</label>
+                        <input type="text" id="companyLocation" name="companyLocation" required>
+
+                        <label for="emailAddress">Email Address</label>
+                        <input type="email" id="emailAddress" name="emailAddress" required>
+
+                        <label for="contactNumber">Contact Number</label>
+                        <input type="text" id="contactNumber" name="contactNumber" required>
+
+                        <div class="popup-btn">
+                          <button type="submit">Submit</button>
+                          <button id="closePopupBtn" onclick="closeBusinessPopup()">Close</button>
+                        </div>
+                      </div>
+
+                      <script>
+                        function openBusinessPopup() {
+                          document.getElementById('businessAccountPopup').style.display = 'block';
+                        }
+
+                        function closeBusinessPopup() {
+                          document.getElementById('businessAccountPopup').style.display = 'none';
+                        }
+                      </script>
+
+
+
     <!-- home section ended -->
 
     <!-- START MAKE TRIP  -->
@@ -324,7 +373,7 @@
     <main>
       <div class="header">
         <span>Top Destinations</span>
-        <h1>Discover Our Most Popular Cities.</h1>
+        <h1>Discover Our Most Popular Locations.</h1>
         <p>
           Connecting you with the best in city travel,Betta Cars for a seamless
           ride experience.
@@ -337,7 +386,7 @@
             <div></div>
             <div>
               <h2>Peterborough</h2>
-              <p>Betta Cars</p>
+              
             </div>
           </div>
         </div>
@@ -347,7 +396,7 @@
             <div></div>
             <div>
               <h2>Whittlesey</h2>
-              <p>Betta Cars</p>
+              
             </div>
           </div>
         </div>
@@ -357,7 +406,7 @@
             <div></div>
             <div>
               <h2>March</h2>
-              <p>Betta Cars</p>
+              
             </div>
           </div>
         </div>
@@ -367,7 +416,7 @@
             <div></div>
             <div>
               <h2>Ramsey</h2>
-              <p>Betta Cars</p>
+              
             </div>
           </div>
         </div>
