@@ -130,15 +130,13 @@ main {
     top: -60px !important;
   }
 }
-
 .fleet-service-card {
   background-color: #ffffff;
   border-radius: 10px;
   margin-top: 12px;
   margin-bottom: 12px;
-  padding: 8px;
+  padding: 16px; /* Increased padding */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  /* width: 320px;  */
   overflow: hidden;
   transition: transform 0.3s ease;
   display: flex;
@@ -146,7 +144,7 @@ main {
 }
 
 .fleet-service-image {
-  height: 220px; /* Increased height of the image */
+  height: 220px;
   overflow: hidden;
 }
 
@@ -157,7 +155,7 @@ main {
 }
 
 .fleet-service-content {
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px;
   flex-grow: 1;
 }
 
@@ -176,44 +174,74 @@ main {
   transform: scale(1.05);
 }
 
-.fleet-service-card {
-  position: relative;
-}
-
 .fleet-service-points {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 10px 0;
 }
 
 .taxi-details {
   display: flex;
-  justify-content: start;
   align-items: center;
-  align-content: center;
-  padding: 0px 20px 8px 20px;
 }
 
 .taxi-details .icon-circle {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
-  width: 30px; /* Adjust the size as needed */
-  height: 30px; /* Adjust the size as needed */
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background-color: #f0f0f0; /* Background color of the circle */
-  color: #333; /* Icon color */
-  font-size: 24px;
+  background-color: #f0f0f0;
+  color: #333;
   margin-right: 6px;
 }
 
-.taxi-details .icon-circle i {
-  font-size: 14px;
+.taxi-details .icon-circle.large-bag {
+  width: 35px; /* Larger bag */
+  height: 35px;
 }
+
+.taxi-details .icon-circle.small-bag {
+  width: 25px; /* Smaller bag */
+  height: 25px;
+}
+
+.taxi-details i {
+  font-size: 18px;
+}
+
 .taxi-details p {
   font-size: 14px;
+  margin-left: 5px; /* Space between icon and text */
 }
+
+.book-button {
+  display: block; /* Ensure it takes the full width */
+  width: 100%; /* Full width of the card */
+  margin-top: 15px;
+  padding: 0; /* Remove any padding */
+}
+
+.book-now {
+  width: 100%; /* Button spans the full width */
+  padding: 10px 0; /* Adjust padding for vertical spacing, remove horizontal padding */
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Ensure text is centered */
+}
+
+.book-now:hover {
+  background-color: #0056b3;
+}
+
+
 
 /* ####################FOOTER  STYLE ########################*/
 
@@ -366,8 +394,8 @@ footer img {
   font-size: 18px;
   opacity: 0;
   background-image: linear-gradient(298deg, #e5292a, #e5292a);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
   left: 0;
   top: 0;
   height: 46px;
