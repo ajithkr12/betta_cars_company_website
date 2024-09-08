@@ -275,3 +275,75 @@
   justify-content: center;
   align-items: center;
 }
+
+.faq-section {
+  margin: 50px 0;
+  text-align: center;
+  color: #333;
+}
+
+.faq-section h2 {
+  font-size: 2.8rem; /* Slightly larger heading */
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #2a2a72; /* Betta Cars color scheme */
+}
+
+/* FAQ Container */
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.6rem; /* Increased font size for the questions */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  outline: none;
+  font-weight: 600; /* Bolder font weight */
+  color: #2a2a72; /* Betta Cars color */
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 15px;
+  font-size: 1.4rem; /* Increased font size for the answers */
+  color: #555;
+}
+
+.faq-question:hover {
+  color: #ff6b6b; /* Hover effect color */
+}
+
+.faq-toggle {
+  font-size: 1.8rem; /* Slightly larger toggle button */
+  color: #2a2a72;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-container {
+    width: 90%;
+  }
+}

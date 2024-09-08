@@ -47,8 +47,12 @@
   </head>
   <body>
     <header>
-      <div class="logo"><img src="images/logo2.JPG" alt="Logo" /></div>
-
+      <div class="logo">
+        <a href="index.html">
+            <img src="images/logo2.JPG" alt="Logo" />
+        </a>
+    </div>
+    
       <nav class="menu" id="main-menu">
         <a href="index.html">Home</a>
         <a href="about.html">About us</a>
@@ -116,7 +120,7 @@
     <div class="container contact-container">
       <div class="row content">
         <div class="col-sm-6 left-side">
-          <div class="topic-text">Contact Us</div>
+          <div class="topic-text">Contact Us/Head Office</div>
 
           <div class="address details">
             <div class="icon-box">
@@ -181,6 +185,14 @@
             </div>
             <div class="input-box">
               <input
+                type="number"
+                placeholder="Enter your Mobile"
+                id="number"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <input
                 type="text"
                 placeholder="Enter your Address"
                 id="address"
@@ -213,6 +225,133 @@
       </div>
     </div>
     <!-- END ABOUT US -->
+
+    <!-- FAQ -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-layout">
+        
+          <div class="faq-container">
+              <div class="faq-item">
+                  <button class="faq-question">
+                      How do I book a ride with Betta Cars?
+                      <span class="faq-toggle">+</span>
+                  </button>
+                  <div class="faq-answer">
+                      <p>You can book a ride through our website or mobile app. Simply enter your pick-up and drop-off locations, and we'll take care of the rest.</p>
+                  </div>
+              </div>
+  
+              <div class="faq-item">
+                  <button class="faq-question">
+                      What areas do you serve?
+                      <span class="faq-toggle">+</span>
+                  </button>
+                  <div class="faq-answer">
+                      <p>Betta Cars operates in Whittlesey, Peterborough, March, Ramsey, and nearby areas.</p>
+                  </div>
+              </div>
+  
+              <div class="faq-item">
+                  <button class="faq-question">
+                      Do you offer airport transfers?
+                      <span class="faq-toggle">+</span>
+                  </button>
+                  <div class="faq-answer">
+                      <p>Yes, we offer reliable and timely airport transfer services to and from all major airports in the UK.</p>
+                  </div>
+              </div>
+  
+              <div class="faq-item">
+                  <button class="faq-question">
+                      How can I apply for a business account?
+                      <span class="faq-toggle">+</span>
+                  </button>
+                  <div class="faq-answer">
+                      <p>You can apply for a business account directly on our website under the "Business Accounts" section or by contacting us via email.</p>
+                  </div>
+              </div>
+  
+              <div class="faq-item">
+                  <button class="faq-question">
+                      What payment methods do you accept?
+                      <span class="faq-toggle">+</span>
+                  </button>
+                  <div class="faq-answer">
+                      <p>We accept all major credit and debit cards, as well as digital wallets like Apple Pay and Google Pay.</p>
+                  </div>
+              </div>
+  
+              <div class="faq-item">
+                  <button class="faq-question">
+                      How do I get a quote for a ride?
+                      <span class="faq-toggle">+</span>
+                  </button>
+                  <div class="faq-answer">
+                      <p>You can get a fare estimate directly through our website or app by entering your pick-up and drop-off details.</p>
+                  </div>
+              </div>
+  
+              <div class="faq-item">
+                  <button class="faq-question">
+                      Do you offer 24/7 service?
+                      <span class="faq-toggle">+</span>
+                  </button>
+                  <div class="faq-answer">
+                      <p>Yes, Betta Cars operates 24/7 to ensure you can get a ride whenever you need it.</p>
+                  </div>
+              </div>
+  
+              <div class="faq-item">
+                  <button class="faq-question">
+                      How do I become a driver with Betta Cars?
+                      <span class="faq-toggle">+</span>
+                  </button>
+                  <div class="faq-answer">
+                      <p>If you’re interested in becoming a driver, please visit the “Join Us” section on our website for more details.</p>
+                  </div>
+              </div>
+  
+              <div class="faq-item">
+                  <button class="faq-question">
+                      Can I track my ride in real-time?
+                      <span class="faq-toggle">+</span>
+                  </button>
+                  <div class="faq-answer">
+                      <p>Yes, you can track your ride in real-time through the app once you have made a booking.</p>
+                  </div>
+              </div>
+  
+              <div class="faq-item">
+                  <button class="faq-question">
+                      Is there a cancellation fee?
+                      <span class="faq-toggle">+</span>
+                  </button>
+                  <div class="faq-answer">
+                      <p>If you cancel your ride after the driver has been dispatched, a cancellation fee may apply. Please check our terms and conditions for more information.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        item.querySelector('.faq-question').addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+  
+
+
+
+
+
+    <!-- FAQ -->
 
     <!-- APP DOWNLOAD START -->
     <section class="download-app-container">
