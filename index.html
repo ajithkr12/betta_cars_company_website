@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="contact.css" />
 
     <!-- Owl Carousel CSS -->
     <link
@@ -148,8 +149,11 @@
                         </div>
                       </div>
 
+
                       <!-- Popup form for Business Account -->
                       <div id="businessAccountPopup">
+                        <form action="#" id="myForm">
+
                         <h2>Apply for Business Account</h2>
                         <label for="companyName">Company Name</label>
                         <input type="text" id="companyName" name="companyName" required>
@@ -170,9 +174,11 @@
                         <input type="text" id="contactNumber" name="contactNumber" required>
 
                         <div class="popup-btn">
-                          <button type="submit">Submit</button>
+                          <button type="submit" style="background-color: #e5292a;">Submit</button>
                           <button id="closePopupBtn" onclick="closeBusinessPopup()">Close</button>
                         </div>
+                        <form action="#" id="myForm">
+
                       </div>
 
                       <script>
@@ -880,6 +886,44 @@
       </svg>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="popupModal" style="display: none">
+      <div class="modal-content">
+        <p id="popupMessage">Message is Sending...</p>
+        <!-- <button id="closePopup">Close</button> -->
+      </div>
+    </div>
+
+    <div id="popupModalSucces" style="display: none">
+      <div class="custom-modal">
+        <div class="succes succes-animation icon-top">
+          <i class="fa fa-check"></i>
+        </div>
+        <div class="succes border-bottom"></div>
+        <div class="content">
+          <p class="message-type">Message sent successfully</p>
+        </div>
+      </div>
+    </div>
+  
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Owl Carousel JS -->
@@ -891,6 +935,8 @@
 
     <!-- Linking custom script -->
     <script src="script.js"></script>
+    <script src="./assets/js/business.js"></script>
+
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {

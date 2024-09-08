@@ -1,8 +1,9 @@
 const url =
-  "https://script.google.com/macros/s/AKfycbxKPrn74wc0VYabNv-WBqCTpmYMLJHkzh_7l7kbbJl188ip0a3xYUlebbgb8gX30n6t/exec";
+  "https://script.google.com/macros/s/AKfycbx5OcW4g5C3_GlW5tdPJHUd-9AattY16IZOCZ5QVnBMVN9Hl-xHz-cuMJDYb3T-4Ja5/exec";
 const myForm = document.querySelector("#myForm");
 const myName = document.querySelector("#name");
 const myEmail = document.querySelector("#email");
+const myAddress = document.querySelector("#address");
 const myMessage = document.querySelector("#message");
 const mySubject = document.querySelector("#subject");
 const subBtn = document.querySelector('input[type="submit"]');
@@ -35,9 +36,12 @@ function submitter(e) {
     const myObj = {
       name: myName.value,
       email: myEmail.value,
+      address: myAddress.value,
       message: myMessage.value,
       subject: mySubject.value,
     };
+    console.log(myObj);
+
     addSendMail(myObj);
   }
 }
