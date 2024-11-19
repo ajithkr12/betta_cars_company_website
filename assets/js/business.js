@@ -1,5 +1,5 @@
 const url =
-  "https://script.google.com/macros/s/AKfycbxaa_3ZQtDPUT7WNMTdPIliuwjHABd7yONB_yun-gHxSklPEMg4AnpyOYwQ-d16Lz1-/exec";
+  "https://script.google.com/macros/s/AKfycbzLyRTOjhgxC8Gk8l_2ZEj0DySVoA8NFoVEWQxOfNQfydzUSBlsbEYggNGomfLYOids/exec";
 const myForm = document.querySelector("#myForm");
 const companyName = document.querySelector("#companyName");
 const companyAddress = document.querySelector("#companyAddress");

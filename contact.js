@@ -1,5 +1,5 @@
 const url =
-  "https://script.google.com/macros/s/AKfycbx5OcW4g5C3_GlW5tdPJHUd-9AattY16IZOCZ5QVnBMVN9Hl-xHz-cuMJDYb3T-4Ja5/exec";
+  "https://script.google.com/macros/s/AKfycbwosbdi-309VX4PP1FZQFR3KNn-eXw-OcvPzxPO26FwLtsKI1FN3jf-NR540-UDFWsvjw/exec";
 const myForm = document.querySelector("#myForm");
 const myName = document.querySelector("#name");
 const myEmail = document.querySelector("#email");
